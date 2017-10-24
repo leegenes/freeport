@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/Header';
+import Menu from './components/Menu';
 
-class Hello extends React.Component {
-  render() {
-    return(
-      <div>Hello {this.props.name}</div>
-    )
+var fakeThings = [
+  {
+    name: "Employees"
+  },
+  {
+    name: "Reporting"
   }
+]
+
+var windowStyle = {
+  display: "flex",
+  flexDirection: "column",
+  height: "100%"
 }
 
 ReactDOM.render(
-  <Hello name='Lee' />,
+  <div style={windowStyle}>
+    <Header />
+    <Menu menuItems={fakeThings} />
+  </div>,
   document.getElementById("app")
 );
