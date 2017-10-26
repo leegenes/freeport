@@ -20,7 +20,7 @@ function create() {
   })
 }
 
-app.on('ready', create)
+app.on('ready', create);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
