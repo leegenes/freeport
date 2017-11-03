@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "dialect": "sqlite",
+    "storage": "./db.dev.sqlcipher"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": ":memory:"
+  }
+}
